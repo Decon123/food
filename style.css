@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-header {
+    width: 100%;
+    padding: 8px 16px;
+    background: #12AD45;
+    display: inline-block;
+}
+.main-nav {
+    padding: 30px;
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 49px - 30px);
+}
+.main-header > div {
+    display: inline-block;
+}
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav__item {
+    display: inline-block;
+}
+.main-nav__item a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    color:#125C13;
+    padding: 10px 0;
+}
+.main-nav__item a:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+.main-nav__item-cta a {
+    color: #fff;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.main-nav__item-cta a:hover {
+    color: #ff1b68;
+    background: #fff;
+    border: none;
+}
+.bg-img {
+    background: url('https://images.unsplash.com/photo-1637930577781-b4b5b5f5adf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+    width: 100%;
+    height: 500px;
+    
+}
+.bg-img p {
+    color: #fff;
+    padding: 8px 16px;
+    text-align: center;
+         
+}
+
+/*section of plans/cards*/
+.section-title {
+    text-align:center;
+    color:#19b84c;
+    margin:30px 0;
+}
+.plan-list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.plan {
+    display: inline-block;
+    text-align: center;
+    background: #d5ffdc;
+    padding:40px 35px 10px;
+    width:30%;
+    margin: 20px 10px;
+    vertical-align: middle;
+}
+.plan-highlighted {
+    background: #19b84c;
+    color:#fff;
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+.plan > * {
+    margin-bottom:15px;
+}
+.plan__title {
+    color: #0e4f1f;
+}
+.plan__price {
+    color: rgb(122, 122, 122);
+}
+.plan__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.plan__features li {
+    margin: 10px 0;
+}
+.plan-highlighted .plan__title {
+    color: #fff;
+}
+.plan-highlighted .plan__price {
+    color: rgb(70, 70, 70);
+}
+/*
+.plan ul li {
+    padding:5px 0;
+}*/
+/*we can put a class for h1 and style it too*/
+.plan-highlighted h1:first-child {
+    background:#fff;
+    color:#19b84c;
+    padding:10px 0;
+    border-radius:10px;
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+/*styling the action button*/
+.btn {
+    background: #0e4f1f;
+    color: #fff;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+    background: #fff;
+    color: #0e4f1f;
+
+}
+.btn:focus {
+    outline: none;
+}
+
+#core-features {
+    margin-top: 80px;
+    background: #ff1b68;
+}
+.core-features__title {
+    color: #fff;
+    text-align: center;
+    padding: 35px 0;
+}
+
+#core-features ul{
+    display: inline-block;
+}
+#core-features ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.core-features__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+.core-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+.core-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.core-feature-description {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.main-footer {
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+.main-footer__link a {
+    color: #fff;
+    text-decoration: none;
+}
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
+/*
+.plan button {
+    padding:10px 20px;
+    border:none;
+}
+*/

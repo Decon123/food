@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+li {
+    list-style-type: none;
+}
+
+.background {
+    background: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.main-header {
+    width: 100%;
+    padding: 8px 16px;
+    background: #12AD45;
+    display: inline-block;
+}
+.main-nav {
+    padding: 30px;
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 49px - 30px);
+}
+.main-header > div {
+    display: inline-block;
+}
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav__item {
+    display: inline-block;
+}
+.main-nav__item a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    color:#125C13;
+    padding: 10px 0;
+}
+.main-nav__item a:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+.main-nav__item-cta a {
+    color: #fff;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.main-nav__item-cta a:hover {
+    color: #ff1b68;
+    background: #fff;
+    border: none;
+}
+
+
+.main-footer {
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+.main-footer__link a {
+    color: #fff;
+    text-decoration: none;
+}
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
+
+.btn {
+    background: #0e4f1f;
+    color: #fff;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+    background: #fff;
+    color: #0e4f1f;
+
+}
+.btn:focus {
+    outline: none;
+}
+
+     
+                    /*
+                    ========
+                    main sections in pkges
+                    =========*/
+#packages {
+    margin:50px 0;
+
+}
+.packages-plans {
+    width:800px;
+    margin:27px auto;
+    background:aliceblue;
+    position: relative;
+}
+.packages-plan {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 54px 27px;
+    border: 4px solid #0e4f1f;
+
+}
+.packages-plan:hover,
+.packages-plan:active {
+    border: 4px solid #ff5454;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+/*
+====
+without using a class use a id
+====
+
+.packages-plans__1 {
+    background: #58a76d;
+}
+.packages-plans__2 {
+    background: #58a76d;
+}
+.packages-plans__3 {
+    background: #12AD45;
+}*/
+.clearfloatfix {
+    clear: both;
+}
+#plus {
+    background: rgba(213,255,220,0.95);
+    
+}
+#free {
+    background: rgba(234,252,237,0.95);
+    float: right;
+    text-align: right;
+}
+#premium {
+    background: rgba(14,79,31,0.95);
+}
+.packages-plan__topic,.packages-plan__subtopic {
+    margin-bottom: 27px;
+}
+.packages-plan__topic {
+    color: #333;
+}
+.packages-plan__badge {
+    position: absolute;
+    top: 48px;
+    right: 27px;
+    background: #ff1b68;
+    color: #fff;
+    padding: 9px 15px;
+    font-size: 15px;
+}
+#free .packages-plan__badge {
+    position: absolute;
+    top: 48px;
+    right: 708px;
+    text-align: left;
+}
+.packages-plan__subtopic {
+    color: #979797;
+}
+.packages-plan__info {
+    border: 3px solid #222;
+    padding: 18px 24px;
+    color: #0e4f1f;
+    background: #fff;
+    width: 100%;
+}
+#premium .packages-plan__topic {
+    color: #fff;
+}
+#premium .packages-plan__subtopic  {
+    color: #bbb;
+    font-weight: bold;
+}
+#premium .packages-plan__info {
+    color: #333;
+    font-weight: normal;
+}
